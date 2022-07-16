@@ -2,16 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DiceScript : MonoBehaviour
+public class storeTowerType : MonoBehaviour
 {
+
     public bool isTurretAvailable = false;
     public int turretType;
 
+   
     // Start is called before the first frame update
     void Start()
     {
-        transform.rotation = Random.rotation;
-        StartCoroutine(diceDelay());
+        
     }
 
     // Update is called once per frame
@@ -19,11 +20,5 @@ public class DiceScript : MonoBehaviour
     {
         
     }
-
-    IEnumerator diceDelay()
-    {
-        yield return new WaitForSeconds(3);
-    }
-
 
 }
