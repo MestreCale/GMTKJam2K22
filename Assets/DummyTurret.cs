@@ -15,7 +15,7 @@ public interface ITurret
 }
 
 [RequireComponent(typeof(Renderer)),RequireComponent(typeof(Collider))]
-public class DummyTurret : MonoBehaviour , IPlaceable, ITurret
+public class DummyTurret : MonoBehaviour , IPlaceable, ITurret, ISelectable
 {
     private Renderer _renderer;
     private Rigidbody _rigidbody;
@@ -83,5 +83,24 @@ public class DummyTurret : MonoBehaviour , IPlaceable, ITurret
            Instantiate(gameObject, transform.position, transform.rotation).GetComponent<ITurret>().Activate();
         }
       
+    }
+
+    public void OnSelect()
+    {
+        
+    }
+
+    public void OnDeselect()
+    {
+    }
+
+    public void OnHover()
+    {
+        Debug.Log("HOVEING TURRET");
+    }
+
+    public void OnDeHover()
+    {
+        Debug.Log("NOT HOVERING TURRET");
     }
 }
