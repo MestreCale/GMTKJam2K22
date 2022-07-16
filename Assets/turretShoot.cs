@@ -7,6 +7,7 @@ public class turretShoot : MonoBehaviour
 {
 
     public GameObject projectile;
+
     public float launchVelocity = 50f;
     public bool roundActive = false;
     public float fireRate = 0.5F;
@@ -29,7 +30,6 @@ public class turretShoot : MonoBehaviour
 
 
 
-
         if (roundActive == true && Time.time > nextFire)
         {
 
@@ -42,24 +42,7 @@ public class turretShoot : MonoBehaviour
         }
     }
 
-    //Transform GetClosestEnemy(Transform[] enemies)
-    //{
-    //    Transform bestTarget = null;
-    //    float closestDistanceSqr = Mathf.Infinity;
-    //    Vector3 currentPos = transform.position;
-    //    foreach (transform potentialTarget in enemies)
-    //    {
-    //        Vector3 directionToTarget = potentialTarget.position - currentPosition;
-    //        float dSqrToTarget = directionToTarget.sqrMagnitude;
-    //        if(dSqrToTarget < closestDistanceSqr)
-    //        {
-    //            closestDistanceSqr = dSqrToTarget;
-    //            bestTarget = potentialTarget;
-    //        }
-    //    }
-    //    return bestTarget;
 
-    //}
 
     public GameObject FindClosestEnemy()
     {
@@ -78,5 +61,10 @@ public class turretShoot : MonoBehaviour
         closest = enemies.OrderBy(go => (transform.position - go.transform.position).sqrMagnitude).First();
         Debug.Log("targetting" + closest.transform.position);
         return closest;
+    }
+
+    void TypeOfTower()
+    {
+
     }
 }
