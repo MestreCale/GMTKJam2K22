@@ -12,6 +12,12 @@ public enum AimState
     AimBuild
 }
 
+public class FiniteStateMachine<T> where T : IPLayer
+{
+    
+}
+
+
 
 namespace MD.Player
 {
