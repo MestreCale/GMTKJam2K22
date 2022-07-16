@@ -1062,7 +1062,8 @@ PrefabInstance:
       propertyPath: m_DefaultBlend.m_Time
       value: 0.1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1608734455, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
 --- !u!1 &1378969583
 GameObject:
@@ -1254,7 +1255,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1221041499}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1608734455
+--- !u!114 &1608734461
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
