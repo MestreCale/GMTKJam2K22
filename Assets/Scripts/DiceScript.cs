@@ -11,7 +11,7 @@ public class DiceScript : MonoBehaviour
     void Start()
     {
         transform.rotation = Random.rotation;
-        StartCoroutine(diceDelay());
+        StartCoroutine(DiceDelay());
     }
 
     // Update is called once per frame
@@ -20,7 +20,7 @@ public class DiceScript : MonoBehaviour
         
     }
 
-    IEnumerator diceDelay()
+    IEnumerator DiceDelay()
     {
         yield return new WaitForSeconds(3);
     }

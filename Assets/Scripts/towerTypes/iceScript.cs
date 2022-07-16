@@ -6,10 +6,7 @@ public class iceScript : MonoBehaviour
 {
     public storeTowerType tower;
 
-    //void Start()
-    //{
-    //    FindController();
-    //}
+
  
     void OnTriggerEnter(Collider other)
     {
@@ -21,10 +18,7 @@ public class iceScript : MonoBehaviour
         }
     }
 
-    //void FindController()
-    //{
-    //    GameObject tower = GameObject.Find("GameController");
-    //}
+
 
     void Awake()
     {
